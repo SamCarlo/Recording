@@ -15,9 +15,9 @@ release "cap"
 release "out"
 close all windows
 ```
-The concept of Last In First Out was important for solving the capturing issue. 
+Thus the concept of Last In First Out was important for solving the capturing issue. 
 
-Secondly, searching on Stack Overflow led us to discover that it is necessary for the input resolution and framerate in the VideoWriter method to match the webcam's actual resolution. The line using VideoWriter appears like this after solving the issue:
+Second, searching on Stack Overflow led us to discover that it is necessary for the input resolution and framerate in the VideoWriter method to match the webcam's actual resolution. The line using VideoWriter appears like this after solving the issue:
 
 ```
 out = cv2.VideoWriter('test15.mp4', fourcc, 15.0, (1280,960))
